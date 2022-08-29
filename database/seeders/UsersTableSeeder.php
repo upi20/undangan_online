@@ -14,16 +14,17 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
+        $nik = 100000000000000;
         \DB::table('users')->delete();
-        
-        \DB::table('users')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('users')->insert(array(
+            0 =>
+            array(
                 'id' => '1',
                 'name' => 'Isep Lutpi Nur',
                 'email' => 'iseplutpinur7@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -36,11 +37,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2022-08-28 20:49:57',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => '16',
                 'name' => 'HILAL MUHAMMAD FATURAHMAN',
                 'email' => 'hilal@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -53,11 +55,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => '17',
                 'name' => 'NITA HALIMATUSSA’DIYAH',
                 'email' => 'nita_halimatus_syadiah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -70,11 +73,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => '19',
                 'name' => 'ABDUL MUHLIS',
                 'email' => 'abdul_muhlis@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -87,11 +91,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => '20',
                 'name' => 'ANDI TAUFIK PERMADI',
                 'email' => 'andi_taufik_permadi@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -104,11 +109,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => '21',
                 'name' => 'SUKIRMAN MAULANA',
                 'email' => 'sukirman_maulana@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -121,11 +127,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => '22',
                 'name' => 'DEWI',
                 'email' => 'dewi@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -138,11 +145,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => '23',
                 'name' => 'WIWIT AWALIYAH',
                 'email' => 'wiwit_awaliyah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -155,11 +163,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => '24',
                 'name' => 'SAEPUL ROHMAN',
                 'email' => 'saepul_rohman@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -172,11 +181,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => '26',
                 'name' => 'HILMI FITRIANI FUAIADAH',
                 'email' => 'hilmi_fitriani_fuaiadah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -189,11 +199,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => '27',
                 'name' => 'SAMSUL MAARIP',
                 'email' => 'samsul_maarip@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -206,11 +217,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => '28',
                 'name' => 'MUHAMAD RAIHAN RAHMAN',
                 'email' => 'muhamad_raihan_rahman@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -223,11 +235,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => '29',
                 'name' => 'AKBAR MUHAMAD ASHONI',
                 'email' => 'akbar_muhamad_ashoni@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -240,11 +253,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => '30',
                 'name' => 'WAHID NURSIDIK',
                 'email' => 'wahid_nursidik@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -257,11 +271,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => '31',
                 'name' => 'M FAISAL L',
                 'email' => 'm_faisal_l@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -274,11 +289,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => '32',
                 'name' => 'SALAFIA AL ZAHRA FAUZIA',
                 'email' => 'salafia_al_zahra_fauzia@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -291,11 +307,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => '33',
                 'name' => 'YUSI YUSFITA',
                 'email' => 'yusi_yusfita@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -308,11 +325,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => '34',
                 'name' => 'CUCU MARYAM NURFADILAH',
                 'email' => 'cucu_maryam_nurfadilah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -325,11 +343,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => '35',
                 'name' => 'RIFKI ALFAIZAR',
                 'email' => 'rifki_alfaizar@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -342,11 +361,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => '36',
                 'name' => 'M. RIDWAN ABDUL AZIZ',
                 'email' => 'm._ridwan_abdul_aziz@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -359,11 +379,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => '37',
                 'name' => 'NOVIANTI',
                 'email' => 'novianti@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -376,11 +397,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => '38',
                 'name' => 'AYU PRATIWI ISMAN',
                 'email' => 'ayu_pratiwi_isman@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -393,11 +415,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => '39',
                 'name' => 'AI RAHMA ALIA',
                 'email' => 'ai_rahma_alia@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -410,11 +433,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => '40',
                 'name' => 'ANDI AULIANSYAH',
                 'email' => 'andi_auliansyah@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -427,11 +451,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            24 => 
-            array (
+            24 =>
+            array(
                 'id' => '41',
                 'name' => 'KHORIDARUL ANISA',
                 'email' => 'khoridarul_anisa@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -444,11 +469,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            25 => 
-            array (
+            25 =>
+            array(
                 'id' => '42',
                 'name' => 'ALWAN A F',
                 'email' => 'alwan_a_f@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -461,11 +487,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            26 => 
-            array (
+            26 =>
+            array(
                 'id' => '43',
                 'name' => 'MUHAMMAD CAHYADI',
                 'email' => 'muhammad_cahyadi@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -478,11 +505,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            27 => 
-            array (
+            27 =>
+            array(
                 'id' => '44',
                 'name' => 'AHMAD KAMIL',
                 'email' => 'ahmad_kamil@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -495,11 +523,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            28 => 
-            array (
+            28 =>
+            array(
                 'id' => '45',
                 'name' => 'SRI AYUNI WAHYUDIN',
                 'email' => 'sri_ayuni_wahyudin@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -512,11 +541,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            29 => 
-            array (
+            29 =>
+            array(
                 'id' => '46',
                 'name' => 'ENCEP ABDUL HAKIM',
                 'email' => 'encep_abdul_hakim@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -529,11 +559,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            30 => 
-            array (
+            30 =>
+            array(
                 'id' => '47',
                 'name' => 'LINDAWATI RUSLIHA',
                 'email' => 'lindawati_rusliha@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -546,11 +577,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            31 => 
-            array (
+            31 =>
+            array(
                 'id' => '49',
                 'name' => 'LINA HERLINA',
                 'email' => 'lina_herlina@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -563,11 +595,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            32 => 
-            array (
+            32 =>
+            array(
                 'id' => '50',
                 'name' => 'AGUSTIANI SRI RAHAYU',
                 'email' => 'agustiani_sri_rahayu@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -580,11 +613,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            33 => 
-            array (
+            33 =>
+            array(
                 'id' => '51',
                 'name' => 'RURI C. HETIAWATI',
                 'email' => 'ruri_c_hetiawati@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -597,11 +631,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            34 => 
-            array (
+            34 =>
+            array(
                 'id' => '52',
                 'name' => 'RINRIN IRMAYANI',
                 'email' => 'rinrin_irmayani@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -614,11 +649,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            35 => 
-            array (
+            35 =>
+            array(
                 'id' => '53',
                 'name' => 'AI DIAN HAERANI',
                 'email' => 'ai_dian_haerani@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -631,11 +667,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            36 => 
-            array (
+            36 =>
+            array(
                 'id' => '54',
                 'name' => 'APRILIA UTAMI HERDI',
                 'email' => 'aprilia_utami_herdi@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -648,11 +685,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            37 => 
-            array (
+            37 =>
+            array(
                 'id' => '55',
                 'name' => 'SITI BASIROH',
                 'email' => 'siti_basiroh@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -665,11 +703,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            38 => 
-            array (
+            38 =>
+            array(
                 'id' => '57',
                 'name' => 'NU’MAN BASIR',
                 'email' => 'numan_basir@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -682,11 +721,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            39 => 
-            array (
+            39 =>
+            array(
                 'id' => '58',
                 'name' => 'MAULANA YUSUF',
                 'email' => 'maulana_yusuf@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -699,11 +739,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            40 => 
-            array (
+            40 =>
+            array(
                 'id' => '59',
                 'name' => 'INDRA KURNIA',
                 'email' => 'indra.kurnia@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -716,11 +757,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            41 => 
-            array (
+            41 =>
+            array(
                 'id' => '60',
                 'name' => 'EGI',
                 'email' => 'egi@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -733,11 +775,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            42 => 
-            array (
+            42 =>
+            array(
                 'id' => '61',
                 'name' => 'M RIDWANAN',
                 'email' => 'm.ridwanan@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -750,11 +793,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            43 => 
-            array (
+            43 =>
+            array(
                 'id' => '62',
                 'name' => 'WITA DEWI LESTARI',
                 'email' => 'wita.dewi.lestari@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -767,11 +811,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            44 => 
-            array (
+            44 =>
+            array(
                 'id' => '63',
                 'name' => 'M SYAHRUL RAMADHAN',
                 'email' => 'm_syahrul_ramdan@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -784,11 +829,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            45 => 
-            array (
+            45 =>
+            array(
                 'id' => '64',
                 'name' => 'ILHAM FAOZ',
                 'email' => 'ilham_faoz@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -801,11 +847,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            46 => 
-            array (
+            46 =>
+            array(
                 'id' => '65',
                 'name' => 'ADRIAN SYAMSYUL RAMLI',
                 'email' => 'adrian_samsul_ramli@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -818,11 +865,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            47 => 
-            array (
+            47 =>
+            array(
                 'id' => '67',
                 'name' => 'AGUNG SETIABUDI',
                 'email' => 'agung.setiabudi@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -835,11 +883,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            48 => 
-            array (
+            48 =>
+            array(
                 'id' => '68',
                 'name' => 'YUSUF MUGNI',
                 'email' => 'yusuf_mughni@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -852,11 +901,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            49 => 
-            array (
+            49 =>
+            array(
                 'id' => '69',
                 'name' => 'SITI SUROH HOLISOH',
                 'email' => 'siti_suroh_holisoh@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -869,11 +919,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            50 => 
-            array (
+            50 =>
+            array(
                 'id' => '70',
                 'name' => 'SAEPUL FIKRI',
                 'email' => 'saepul.fikri@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -886,11 +937,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            51 => 
-            array (
+            51 =>
+            array(
                 'id' => '71',
                 'name' => 'MUHAMMAD FIKI NUGRAHA',
                 'email' => 'm.fiki.nugraha@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -903,11 +955,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            52 => 
-            array (
+            52 =>
+            array(
                 'id' => '72',
                 'name' => 'SRI HASTUTI',
                 'email' => 'sri_hastuti@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -920,11 +973,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            53 => 
-            array (
+            53 =>
+            array(
                 'id' => '73',
                 'name' => 'DERIS KUSNAEDI',
                 'email' => 'deris_kusnaedi@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -937,11 +991,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            54 => 
-            array (
+            54 =>
+            array(
                 'id' => '74',
                 'name' => 'FERY FIRMANSYAH',
                 'email' => 'fery_firmansyah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -954,11 +1009,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            55 => 
-            array (
+            55 =>
+            array(
                 'id' => '75',
                 'name' => 'NISYARA SEPTIARANI SUKMA',
                 'email' => 'nisyara_septiarani_sukma@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -971,11 +1027,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            56 => 
-            array (
+            56 =>
+            array(
                 'id' => '76',
                 'name' => 'SITI NURJAMILAH',
                 'email' => 'siti_nurjamilah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -988,11 +1045,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            57 => 
-            array (
+            57 =>
+            array(
                 'id' => '77',
                 'name' => 'PUPUNG RUSTIKA ',
                 'email' => 'pupung_rustika@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1005,11 +1063,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            58 => 
-            array (
+            58 =>
+            array(
                 'id' => '78',
                 'name' => 'HASBI ABDUL HUSAIN ',
                 'email' => 'hasbi_abdul_husain@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1022,11 +1081,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            59 => 
-            array (
+            59 =>
+            array(
                 'id' => '79',
                 'name' => 'NUR HASAN ',
                 'email' => 'nur_hasan@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1039,11 +1099,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            60 => 
-            array (
+            60 =>
+            array(
                 'id' => '80',
                 'name' => 'ARSILA KHAIRUNNISA',
                 'email' => 'arsila_khairunnisa@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1056,11 +1117,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            61 => 
-            array (
+            61 =>
+            array(
                 'id' => '81',
                 'name' => 'SOFI TRI A',
                 'email' => 'sofi_tri_a@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1073,11 +1135,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            62 => 
-            array (
+            62 =>
+            array(
                 'id' => '82',
                 'name' => 'RAGIL JR',
                 'email' => 'ragil_jr@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1090,11 +1153,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            63 => 
-            array (
+            63 =>
+            array(
                 'id' => '83',
                 'name' => 'MUHAMMAD IMAN NURJAMAN',
                 'email' => 'muhammad_iman_nurjaman@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1107,11 +1171,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            64 => 
-            array (
+            64 =>
+            array(
                 'id' => '84',
                 'name' => 'MUHAMMAD INDRA SUKMARA',
                 'email' => 'muhammad_indra_sukmara@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1124,11 +1189,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            65 => 
-            array (
+            65 =>
+            array(
                 'id' => '85',
                 'name' => 'MUHAMMAD RAIHAN ',
                 'email' => 'muhammad_raihan@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1141,11 +1207,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            66 => 
-            array (
+            66 =>
+            array(
                 'id' => '86',
                 'name' => 'IMAT ROHIMAT',
                 'email' => 'imat_rohimat@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1158,11 +1225,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            67 => 
-            array (
+            67 =>
+            array(
                 'id' => '87',
                 'name' => 'ALFIRDA DAMAYANTI ',
                 'email' => 'alfirda_damayanti@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1175,11 +1243,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            68 => 
-            array (
+            68 =>
+            array(
                 'id' => '89',
                 'name' => 'SILVIA ANGGRAENI',
                 'email' => 'silvia_anggraeni@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1192,11 +1261,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            69 => 
-            array (
+            69 =>
+            array(
                 'id' => '90',
                 'name' => 'AI YETI KOKOM KOMALASARI',
                 'email' => 'ai_yeti_kokom_komalasari@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1209,11 +1279,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            70 => 
-            array (
+            70 =>
+            array(
                 'id' => '91',
                 'name' => 'SIPA PUSPITASARI ',
                 'email' => 'sipa_puspitasari@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1226,11 +1297,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            71 => 
-            array (
+            71 =>
+            array(
                 'id' => '92',
                 'name' => 'ADE MUNAWAR',
                 'email' => 'ade_munawar@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1243,11 +1315,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            72 => 
-            array (
+            72 =>
+            array(
                 'id' => '93',
                 'name' => 'ABDUL AZIZ ',
                 'email' => 'abdul_aziz@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1260,11 +1333,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            73 => 
-            array (
+            73 =>
+            array(
                 'id' => '94',
                 'name' => 'GUSAERI ',
                 'email' => 'gusaeri@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1277,11 +1351,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            74 => 
-            array (
+            74 =>
+            array(
                 'id' => '95',
                 'name' => 'M. FAISHAL ',
                 'email' => 'm_faishal@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1294,11 +1369,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            75 => 
-            array (
+            75 =>
+            array(
                 'id' => '96',
                 'name' => 'NASRIATUL HAMIDAH',
                 'email' => 'nasriatul_hamidah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1311,11 +1387,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            76 => 
-            array (
+            76 =>
+            array(
                 'id' => '97',
                 'name' => 'NENG NURHANAH ',
                 'email' => 'neng_nurhanah@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1328,11 +1405,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            77 => 
-            array (
+            77 =>
+            array(
                 'id' => '98',
                 'name' => 'SOLEHUDIN',
                 'email' => 'solehudin@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1345,11 +1423,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            78 => 
-            array (
+            78 =>
+            array(
                 'id' => '99',
                 'name' => 'AHMAD DIMYATI RIDWAN',
                 'email' => 'dimyatiridwanahmad@gmail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1362,11 +1441,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            79 => 
-            array (
+            79 =>
+            array(
                 'id' => '100',
                 'name' => 'ELISA PUTRI ANGGRAENI',
                 'email' => 'elisa_putri_anggraeni@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1379,11 +1459,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            80 => 
-            array (
+            80 =>
+            array(
                 'id' => '101',
                 'name' => 'WIDI AYUNI MAULIDIA',
                 'email' => 'widi@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1396,11 +1477,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            81 => 
-            array (
+            81 =>
+            array(
                 'id' => '106',
                 'name' => 'RAMLAN HIDAYAT',
                 'email' => 'ramlan_hidayat@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1413,11 +1495,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            82 => 
-            array (
+            82 =>
+            array(
                 'id' => '108',
                 'name' => 'AJENG KARTINI',
                 'email' => 'ajeng_kartini@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1430,11 +1513,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            83 => 
-            array (
+            83 =>
+            array(
                 'id' => '109',
                 'name' => 'ILHAM FAISAL DEBO',
                 'email' => 'ilham_faisal_debo@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1447,11 +1531,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            84 => 
-            array (
+            84 =>
+            array(
                 'id' => '110',
                 'name' => 'RISMAWATI',
                 'email' => 'rismawati@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1464,11 +1549,12 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            85 => 
-            array (
+            85 =>
+            array(
                 'id' => '111',
                 'name' => 'THIA RAMADHANI AMIN',
                 'email' => 'thia_ramadhani_amin@mail.com',
+                'nik' => $nik++,
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$DsI7ChQu4aIwEwc0CTlCnO66pBuIukicAIA/oIKwHD4AIGzIHmHZO',
                 'two_factor_secret' => NULL,
@@ -1482,7 +1568,5 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-        
-        
     }
 }

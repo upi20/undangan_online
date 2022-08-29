@@ -4,13 +4,8 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Artikel\Artikel;
-use App\Models\Galeri;
-use App\Models\Pengurus\Jabatan;
-use App\Models\Pengurus\Periode;
 use App\Models\User;
-use Illuminate\Http\Request;
 use App\Repository\Frontend\HomeRepository;
-use Illuminate\Support\Facades\DB;
 
 class ArtikelController extends Controller
 {
