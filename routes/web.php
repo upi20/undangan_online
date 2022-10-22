@@ -39,9 +39,10 @@ Route::controller(LoginController::class)->group(function () {
 
 
 // home default =======================================================================================================
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/', 'index')->name("home");
-});
+Route::get('/', function (Request $request) {
+    $nama_tamu = $request->to;
+    return view('undangan.ulfa', compact('nama_tamu'));
+})->name('undangan');
 
 // artikel ============================================================================================================
 $prefix = 'artikel';
