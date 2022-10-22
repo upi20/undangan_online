@@ -262,7 +262,7 @@
         },
         "post": {
             "id": 38950,
-            "title": "Ayu%20%26%20Fauzan%20-%20Mengundang%20Mu",
+            "title": "Wulan%20%26%20Zhaffar%20-%20Mengundang%20Mu",
             "excerpt": "",
             "featuredImage": "https:\/\/calonmantu.com\/wp-content\/uploads\/2022\/09\/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg"
         }

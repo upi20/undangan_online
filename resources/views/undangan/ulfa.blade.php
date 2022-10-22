@@ -133,7 +133,7 @@
 
 
                                                     <div class="wdp-mempelai" style="width: auto !important;">
-                                                        Ayu &amp; Fauzan
+                                                        Wulan &amp; Zhaffar
                                                     </div>
 
 
@@ -236,7 +236,7 @@
                                     data-id="23c08c50" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">
-                                            Ayu & Fauzan</p>
+                                            Wulan & Zhaffar</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-182831f8 wdp-sticky-section-no elementor-widget elementor-widget-image"
@@ -475,12 +475,11 @@
                                     data-id="be9faad" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a href="https://goo.gl/maps/6DGoS8ZxTH53WX7K7"
+                                            <a href="https://g.co/kgs/eQqTNx"
                                                 class="elementor-button-link elementor-button elementor-size-sm"
                                                 role="button">
                                                 <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">Open
-                                                        Map</span>
+                                                    <span class="elementor-button-text">Open Map</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -703,10 +702,8 @@
                                                                             alt="" loading="lazy" />
                                                                     </figure>
                                                                     <div class="elementor-image-box-content">
-                                                                        <p class="elementor-image-box-title">
-                                                                            Nur Ayu
-                                                                            Rachmawati
-                                                                            S.H</p>
+                                                                        <p class="elementor-image-box-title">Wulan Sari
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -744,9 +741,7 @@
                                                                     </figure>
                                                                     <div class="elementor-image-box-content">
                                                                         <p class="elementor-image-box-title">
-                                                                            Fauzan
-                                                                            Hamdi
-                                                                            S.E</p>
+                                                                            Muzhaffar Nur Hidayat</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -821,7 +816,7 @@
                                     <div class="elementor-widget-container">
                                         <div class="elementor-gallery__container">
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.45.12-1.jpg') }}"
+                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.45.12-1.jpeg') }}"
                                                 data-elementor-open-lightbox="yes"
                                                 data-elementor-lightbox-slideshow="all-22993334"
                                                 data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.45.12 (1)"
@@ -833,7 +828,7 @@
                                                 </div>
                                             </a>
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.45.12.jpg') }}"
+                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.45.12.jpeg') }}"
                                                 data-elementor-open-lightbox="yes"
                                                 data-elementor-lightbox-slideshow="all-22993334"
                                                 data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.45.12"
@@ -845,7 +840,7 @@
                                                 </div>
                                             </a>
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.43.25.jpg') }}"
+                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg') }}"
                                                 data-elementor-open-lightbox="yes"
                                                 data-elementor-lightbox-slideshow="all-22993334"
                                                 data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.43.25"
@@ -857,7 +852,7 @@
                                                 </div>
                                             </a>
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.43.24.jpg') }}"
+                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.43.24.jpeg') }}"
                                                 data-elementor-open-lightbox="yes"
                                                 data-elementor-lightbox-slideshow="all-22993334"
                                                 data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.43.24"
@@ -870,7 +865,7 @@
                                                 </div>
                                             </a>
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.23-2.jpg') }}"
+                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.23-2.jpeg') }}"
                                                 data-elementor-open-lightbox="yes"
                                                 data-elementor-lightbox-slideshow="all-22993334"
                                                 data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.42.23 (2)"
@@ -883,7 +878,7 @@
                                                 </div>
                                             </a>
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.22.jpg') }}"
+                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.22.jpeg') }}"
                                                 data-elementor-open-lightbox="yes"
                                                 data-elementor-lightbox-slideshow="all-22993334"
                                                 data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.42.22"
@@ -1547,7 +1542,7 @@
 
 
                                                                     <p>Happy wedding
-                                                                        ayu! Lancar
+                                                                        Wulan! Lancar
                                                                         lancar sampe
                                                                         hari H!
                                                                         Wishing u
@@ -1627,7 +1622,7 @@
                                                                         dan menjadi
                                                                         keluarga
                                                                         samawa
-                                                                        ayu🤲🏻🥰
+                                                                        Wulan🤲🏻🥰
                                                                     </p>
 
                                                                 </div>
@@ -1778,7 +1773,7 @@
 
 
                                                                     <p>selamatttt
-                                                                        ayu sakinah
+                                                                        Wulan sakinah
                                                                         mawadah
                                                                         warahmah🙏
                                                                     </p>
@@ -1852,11 +1847,11 @@
 
                                                                     <p>Alhamdulillah
                                                                         ikut seneng
-                                                                        buat Ayu…
+                                                                        buat Wulan…
                                                                         <br>
                                                                         Barakallahu
-                                                                        fiikum Ayu
-                                                                        dan Fauzan
+                                                                        fiikum Wulan
+                                                                        dan Zhaffar
                                                                         smoga jd
                                                                         Keluarga
                                                                         SaMaWa dan
@@ -1940,7 +1935,7 @@
                                                                     <p>Semoga
                                                                         bahagia
                                                                         selalu
-                                                                        ayu..semoga
+                                                                        Wulan..semoga
                                                                         pernikahannya
                                                                         diberkahi
                                                                         Allah
@@ -2190,8 +2185,8 @@
                                                                     <p>Alhamdulillah,
                                                                         Barakallaah
                                                                         fiikum buat
-                                                                        ayu dan
-                                                                        Fauzan,semoga
+                                                                        Wulan dan
+                                                                        Zhaffar,semoga
                                                                         Bahagia
                                                                         Selalu dan
                                                                         Berkah
@@ -2345,7 +2340,7 @@
                                                                 <div class="wdp-comment-text">
 
 
-                                                                    <p>Selamaaa ayu
+                                                                    <p>Selamaaa Wulan
                                                                         semoga
                                                                         menjadi
                                                                         keluarga

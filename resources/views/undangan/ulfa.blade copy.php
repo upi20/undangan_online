@@ -442,7 +442,7 @@
 
 
                                                             <p>Happy wedding
-                                                                ayu! Lancar
+                                                                Wulan! Lancar
                                                                 lancar sampe
                                                                 hari H!
                                                                 Wishing u
@@ -519,7 +519,7 @@
                                                                 dan menjadi
                                                                 keluarga
                                                                 samawa
-                                                                ayu🤲🏻🥰
+                                                                Wulan🤲🏻🥰
                                                             </p>
 
                                                         </div>
@@ -664,7 +664,7 @@
 
 
                                                             <p>selamatttt
-                                                                ayu sakinah
+                                                                Wulan sakinah
                                                                 mawadah
                                                                 warahmah🙏
                                                             </p>
@@ -735,11 +735,11 @@
 
                                                             <p>Alhamdulillah
                                                                 ikut seneng
-                                                                buat Ayu…
+                                                                buat Wulan…
                                                                 <br>
                                                                 Barakallahu
-                                                                fiikum Ayu
-                                                                dan Fauzan
+                                                                fiikum Wulan
+                                                                dan Zhaffar
                                                                 smoga jd
                                                                 Keluarga
                                                                 SaMaWa dan
@@ -820,7 +820,7 @@
                                                             <p>Semoga
                                                                 bahagia
                                                                 selalu
-                                                                ayu..semoga
+                                                                Wulan..semoga
                                                                 pernikahannya
                                                                 diberkahi
                                                                 Allah
@@ -1061,8 +1061,8 @@
                                                             <p>Alhamdulillah,
                                                                 Barakallaah
                                                                 fiikum buat
-                                                                ayu dan
-                                                                Fauzan,semoga
+                                                                Wulan dan
+                                                                Zhaffar,semoga
                                                                 Bahagia
                                                                 Selalu dan
                                                                 Berkah
@@ -1210,7 +1210,7 @@
                                                         <div class="wdp-comment-text">
 
 
-                                                            <p>Selamaaa ayu
+                                                            <p>Selamaaa Wulan
                                                                 semoga
                                                                 menjadi
                                                                 keluarga
