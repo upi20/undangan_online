@@ -22,7 +22,11 @@ use App\Http\Controllers\Frontend\KontakController;
 use App\Http\Controllers\Frontend\MemberController;
 use App\Http\Controllers\Frontend\GaleriController as GaleriControllerFrontend;
 use App\Http\Controllers\Frontend\ArtikelController;
+use App\Http\Controllers\TesController;
 
+Route::get('/session/buat', [TesController::class, 'buatSession']);
+Route::get('/session/tampil', [TesController::class, 'tampilkanSession']);
+Route::get('/session/hapus', [TesController::class, 'hapusSession']);
 
 // ====================================================================================================================
 // ====================================================================================================================
@@ -35,11 +39,18 @@ Route::controller(LoginController::class)->group(function () {
 });
 // ====================================================================================================================
 
-
-
-
 // home default =======================================================================================================
 Route::get('/', function (Request $request) {
+    // menyimpan data session
+    // session(['key' => 'value']);
+    // $request->session()->put('nama', 'Diki Alfarabi Hadi');
+    // mengambil data session pada key
+    // $value = session('nama');
+
+    // dd(1 * (60 * 24 * 365));
+    // // mengambil data dengan default value
+    // $value = session('key', 'default');
+
     $nama_tamu = $request->to;
     return view('undangan.ulfa', compact('nama_tamu'));
 })->name('undangan');

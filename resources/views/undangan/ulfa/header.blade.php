@@ -473,7 +473,9 @@
     <link rel="apple-touch-icon"
         href="{{ asset('template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-180x180.png') }}" />
     <meta name="msapplication-TileImage"
-        content="/template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-270x270.png'" />
+        content="/template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-270x270.png" />
+    <!-- JQUERY JS -->
+    <script src="{{ asset('assets/templates/admin/js/jquery.min.js') }}"></script>
 </head>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
     role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">

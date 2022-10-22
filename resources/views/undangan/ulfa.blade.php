@@ -325,7 +325,7 @@
             </div>
         </section>
 
-        <section
+        <section id="jadwal"
             class="elementor-section elementor-top-section elementor-element elementor-element-22f13031 elementor-section-boxed elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
             data-id="22f13031" data-element_type="section" id="acara"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;wave-brush&quot;,&quot;shape_divider_bottom&quot;:&quot;wave-brush&quot;}">
@@ -415,10 +415,7 @@
                                                                             </span>
                                                                         </p>
                                                                         <p class="elementor-icon-box-description">
-                                                                            Minggu,
-                                                                            09
-                                                                            Oktober
-                                                                            2022
+                                                                            Minggu, 11 Desember 2022
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -465,17 +462,16 @@
                                 <div class="elementor-element elementor-element-36fb489d wdp-sticky-section-no elementor-widget elementor-widget-heading"
                                     data-id="36fb489d" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <p class="elementor-heading-title elementor-size-default">
-                                            Taman Wiraditra <br>
-                                            Cipamokolan, Kec. Rancasari,<br>
-                                            Kota Bandung, Jawa Barat 40292</p>
+                                        <p class="elementor-heading-title elementor-size-default">Taman kopi kolmas<br>
+                                            Jambudipa, Kec. Cisarua,<br>
+                                            Bandung Barat, Jawa Barat 40551</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-be9faad elementor-align-justify wdp-sticky-section-no elementor-widget elementor-widget-button"
                                     data-id="be9faad" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a href="https://g.co/kgs/eQqTNx"
+                                            <a href="https://goo.gl/maps/NMkUDt1zHGBh5ZoN9"
                                                 class="elementor-button-link elementor-button elementor-size-sm"
                                                 role="button">
                                                 <span class="elementor-button-content-wrapper">
@@ -528,10 +524,7 @@
                                                                             </span>
                                                                         </p>
                                                                         <p class="elementor-icon-box-description">
-                                                                            Minggu,
-                                                                            09
-                                                                            Oktober
-                                                                            2022
+                                                                            Minggu, 11 Desember 2022
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -579,9 +572,9 @@
                                     data-id="7672c72" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">
-                                            Taman Wiraditra <br>
-                                            Cipamokolan, Kec. Rancasari,<br>
-                                            Kota Bandung, Jawa Barat 40292</p>
+                                            Taman kopi kolmas<br>
+                                            Jambudipa, Kec. Cisarua,<br>
+                                            Bandung Barat, Jawa Barat 40551</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-328f833 wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-countdown"
@@ -597,29 +590,29 @@
                                                     data-date="Oct 09 2022 12:30:00">
                                                     <li class="wpkoi-elements-countdown-item">
                                                         <div class="wpkoi-elements-countdown-days">
-                                                            <span data-days
-                                                                class="wpkoi-elements-countdown-digits">00</span><span
+                                                            <span data-days class="wpkoi-elements-countdown-digits"
+                                                                id="cd-days">00</span><span
                                                                 class="wpkoi-elements-countdown-label">Days</span>
                                                         </div>
                                                     </li>
                                                     <li class="wpkoi-elements-countdown-item">
                                                         <div class="wpkoi-elements-countdown-hours">
-                                                            <span data-hours
-                                                                class="wpkoi-elements-countdown-digits">00</span><span
+                                                            <span data-hours class="wpkoi-elements-countdown-digits"
+                                                                id="cd-hours">00</span><span
                                                                 class="wpkoi-elements-countdown-label">Hours</span>
                                                         </div>
                                                     </li>
                                                     <li class="wpkoi-elements-countdown-item">
                                                         <div class="wpkoi-elements-countdown-minutes">
-                                                            <span data-minutes
-                                                                class="wpkoi-elements-countdown-digits">00</span><span
+                                                            <span data-minutes class="wpkoi-elements-countdown-digits"
+                                                                id="cd-minutes">00</span><span
                                                                 class="wpkoi-elements-countdown-label">Minutes</span>
                                                         </div>
                                                     </li>
                                                     <li class="wpkoi-elements-countdown-item">
                                                         <div class="wpkoi-elements-countdown-seconds">
-                                                            <span data-seconds
-                                                                class="wpkoi-elements-countdown-digits">00</span><span
+                                                            <span data-seconds class="wpkoi-elements-countdown-digits"
+                                                                id="cd-seconds">00</span><span
                                                                 class="wpkoi-elements-countdown-label">Seconds</span>
                                                         </div>
                                                     </li>
@@ -941,7 +934,7 @@
                                         <div class="elementor-wdp-form-wrapper elementor-wdp-form-button-align-left">
                                             <form method="get" class="wdp-form wdp-wa-form"
                                                 id="wdp-wa-form-6c5b8e10"
-                                                data-waapi="https://api.whatsapp.com/send?phone=6281320581472&amp;text=Hai%2C%20saya%20%25nama%25%20ingin%20konfirmasi%20kehadiran%20pada%20undangan%20pernikahan%20digital%20bahwa%20%25option%25%20bersama%20%25jumlah%25%20orang.%20Saya%20ucapkan%3A%20%20_%2A%25pesan%25%2A_.%20Terima%20kasih%20ya.">
+                                                data-waapi="https://api.whatsapp.com/send?phone=6285720258480&amp;text=Hai%2C%20saya%20%25nama%25%20ingin%20konfirmasi%20kehadiran%20pada%20undangan%20pernikahan%20digital%20bahwa%20%25option%25%20bersama%20%25jumlah%25%20orang.%20Saya%20ucapkan%3A%20%20_%2A%25pesan%25%2A_.%20Terima%20kasih%20ya.">
                                                 <div class="wdp-form-fields-wrapper">
                                                     <div class="wdp-form-field-nama">
                                                         <label for="wdp-form-nama-6c5b8e10" class="">
@@ -1044,7 +1037,7 @@
         <section
             class="elementor-section elementor-top-section elementor-element elementor-element-451aa999 elementor-section-full_width elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
             data-id="451aa999" data-element_type="section"
-            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" id="rsvp">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-row">
                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5e2008b3 wdp-sticky-section-no"
@@ -1111,12 +1104,10 @@
                                                                 </p>
                                                                 <div class="wdp-wrap-textarea">
 
-                                                                    <div class="charleft wdp-counter-info">
-                                                                        &nbsp;</div>
-                                                                    <span class="wdp-required">*</span><span
-                                                                        class="wdp-error-info wdp-error-info-text">Minimal
-                                                                        2
-                                                                        karakter.</span>
+                                                                    <textarea id="wdp-textarea-38950" class="waci_comment wdp-textarea autosize-textarea" name="comment"
+                                                                        aria-required="true" placeholder="wedding wishes" rows="3"
+                                                                        style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 70px;"></textarea>
+                                                                    <div class="charleft wdp-counter-info">475</div>
                                                                 </div>
 
                                                                 <div class="wdp-wrap-select">
@@ -1368,21 +1359,7 @@
                                                                 <div class="wdp-comment-text">
 
 
-                                                                    <p>Mantap jan…
-                                                                        👍 Happy
-                                                                        Wedding
-                                                                        brader..
-                                                                        🍻Maapin ya
-                                                                        ga bisa
-                                                                        hadir..
-                                                                        🙏Semoga
-                                                                        menjadi
-                                                                        keluarga
-                                                                        yang
-                                                                        SAMAWA.. 💑
-                                                                        dan.. Cepet
-                                                                        dpt
-                                                                        momongan 👶
+                                                                    <p>{{ 'Mantap jan…👍 HappyWeddingbrader..🍻Maapin yaga bisahadir..🙏SemogamenjadikeluargayangSAMAWA.. 💑dan.. Cepetdptmomongan 👶 ' }}
                                                                     </p>
 
                                                                 </div>
@@ -2608,61 +2585,9 @@
                                 </div>
                                 <section
                                     class="elementor-section elementor-inner-section elementor-element elementor-element-40e5804c elementor-section-boxed elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
-                                    data-id="40e5804c" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
-                                        <div class="elementor-row">
-                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1653b656 wdp-sticky-section-no"
-                                                data-id="1653b656" data-element_type="column">
-                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                    <div class="elementor-widget-wrap">
-                                                        <div class="elementor-element elementor-element-47c9693 wdp-sticky-section-no elementor-widget elementor-widget-image"
-                                                            data-id="47c9693" data-element_type="widget"
-                                                            data-widget_type="image.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-image">
-                                                                    <a class="elementor-image-link"
-                                                                        href="https://www.instagram.com/agrainvitation/">
-                                                                        <img width="300" height="93"
-                                                                            src="{{ asset('template/wp-content/uploads/2021/04/agra-logo-1-300x93.png') }}"
-                                                                            class="attachment-medium size-medium"
-                                                                            alt="" loading="lazy" /> </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-19b12898 wdp-sticky-section-no"
-                                                data-id="19b12898" data-element_type="column">
-                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                    <div class="elementor-widget-wrap">
-                                                        <div class="elementor-element elementor-element-2c84dce4 elementor-align-left elementor-mobile-align-left wdp-sticky-section-no elementor-widget elementor-widget-button_lp"
-                                                            data-id="2c84dce4" data-element_type="widget"
-                                                            data-widget_type="button_lp.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-button-wrapper">
-                                                                    <a href="https://www.instagram.com/agrainvitation/"
-                                                                        class="elementor-button-link elementor-button elementor-size-md"
-                                                                        role="button">
-                                                                        <span
-                                                                            class="elementor-button-content-wrapper">
-                                                                            <span
-                                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                                <i aria-hidden="true"
-                                                                                    class="fab fa-instagram"></i>
-                                                                            </span>
-                                                                            <span
-                                                                                class="elementor-button-text">agrainvitation</span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    data-id="40e5804c" data-element_type="section"
+                                    style="text-align: center; font-weight: bold">
+                                    undangonline.pw
                                 </section>
                             </div>
                         </div>
