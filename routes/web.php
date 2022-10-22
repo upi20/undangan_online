@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 // ====================================================================================================================
 
 use App\Http\Controllers\Admin\Pendaftaran\GFormController;
@@ -113,6 +114,10 @@ Route::controller(LabController::class)->prefix($prefix)->group(function () {
 
 // frontend ==========================================================================================================
 Route::get('/frontend', [HomeController::class, 'fronted2'])->name('frontend');
+Route::get('/ulfa', function (Request $request) {
+    $nama_tamu = $request->to;
+    return view('undangan.ulfa', compact('nama_tamu'));
+})->name('undangan');
 
 
 // profile username ===================================================================================================
