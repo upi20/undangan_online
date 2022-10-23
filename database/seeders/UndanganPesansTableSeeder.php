@@ -61,19 +61,6 @@ Aamiin',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
-            array (
-                'id' => 7,
-                'undangan_id' => 1,
-                'nama' => 'Pelunasan',
-                'pesan' => '123',
-                'keterangan' => 'attend',
-                'tanggal' => '2022-10-23 12:44:02',
-                'updated_by' => NULL,
-                'created_by' => NULL,
-                'created_at' => '2022-10-23 12:44:02',
-                'updated_at' => '2022-10-23 12:44:02',
-            ),
         ));
         
         

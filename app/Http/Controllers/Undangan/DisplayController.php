@@ -19,6 +19,7 @@ class DisplayController extends Controller
         $amplop = $model->amplop;
         $galeri = $model->galeri->sortBy('sequence');
         $sampul = $galeri->where('kode', 'SAMPUL')->first();
+        // $sampul = $galeri->where('kode', 'SAMPUL_DEPAN')->first();
         // $sampul = $galeri->where('kode', 'SAMPUL_BELAKANG')->first();
         // $sampul = $galeri->where('kode', 'SAMPUL_ACARA')->first();
         // $sampul = $galeri->where('kode', 'MEMPELAI_PRIA')->first();
