@@ -281,9 +281,9 @@
     src='{{ asset('template/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min1ac1.js?ver=3.7.3') }}'
     id='e-sticky-js'></script>
 <script type='text/javascript' id='weddingpress-wdp-js-extra'></script>
-<script type='text/javascript'
+{{-- <script type='text/javascript'
     src='{{ asset('template/wp-content/plugins/weddingpress/assets/js/wdp.min9b4a.js?ver=3.0.11') }}'
-    id='weddingpress-wdp-js'></script>
+    id='weddingpress-wdp-js'></script> --}}
 <script type='text/javascript'
     src='{{ asset('template/wp-content/plugins/weddingpress/assets/js/guest-form9b4a.js?ver=3.0.11') }}'
     id='kirim-kit-js'></script>
@@ -329,6 +329,10 @@
         $('#cd-minutes').html(minutes);
         $('#cd-seconds').html(seconds);
     }, 1000);
+
+    $('button.elementor-button').click(() => {
+        document.getElementById('song').play()
+    })
 </script>
 </body>
 

@@ -179,10 +179,10 @@
                                                     </script>
 
                                                     <script>
-                                                        var z = document.querySelector('#wdp-button-wrapper');
-                                                        z.addEventListener("click", function(event) {
-                                                            document.getElementById("song").play();
-                                                        });
+                                                        // var z = document.querySelector('#wdp-button-wrapper');
+                                                        // z.addEventListener("click", function(event) {
+                                                        //     document.getElementById("song").play();
+                                                        // });
                                                     </script>
 
                                                     <style type="text/css">
@@ -620,15 +620,6 @@
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>
-
-
-                                        <script type="text/javascript">
-                                            jQuery(document).ready(function($) {
-                                                'use strict';
-                                                $("#wpkoi-elements-countdown-328f833").countdown();
-                                            });
-                                        </script>
-
                                     </div>
                                 </div>
                             </div>
