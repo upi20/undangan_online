@@ -33,17 +33,17 @@ class UserController extends Controller
     {
         try {
             $request->validate([
-                'nik' => ['required'],
+                'no_telepon' => ['required'],
                 'password' => ['required']
             ]);
 
-            $credentials = request(['nik', 'password']);
+            $credentials = request(['no_telepon', 'password']);
             if (!Auth::attempt($credentials)) {
                 return ResponseFormatter::error([
                     'message' => 'Unauthorized'
                 ], 'Authentication Failed', 500);
             }
-            $user = User::where('nik', $request->nik)->first();
+            $user = User::where('no_telepon', $request->no_telepon)->first();
 
             if (!Hash::check($request->password, $user->password, [])) {
                 throw new \Exception('Invalid Credentials');
@@ -74,18 +74,18 @@ class UserController extends Controller
             $request->validate([
                 'name' => ['required', 'string', 'max:255'],
                 'username' => ['required', 'string', 'max:255', 'unique:users'],
-                'nik' => ['required', 'integer', 'digits:16', 'unique:users'],
+                'no_telepon' => ['required', 'integer', 'digits:16', 'unique:users'],
                 'password' => ['required', 'string', new Password]
             ]);
 
             User::create([
                 'name' => $request->name,
-                'nik' => $request->nik,
+                'no_telepon' => $request->no_telepon,
                 'username' => $request->username,
                 'password' => Hash::make($request->password),
             ]);
 
-            $user = User::where('nik', $request->nik)->first();
+            $user = User::where('no_telepon', $request->no_telepon)->first();
 
             $tokenResult = $user->createToken('authToken')->plainTextToken;
 

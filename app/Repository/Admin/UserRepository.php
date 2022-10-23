@@ -44,7 +44,7 @@ class UserRepository
 
         $this->query["{$c_roles}_alias"] = $c_roles;
 
-        $user = User::select(['id', 'name', 'email', 'active'])
+        $user = User::select(['id', 'name', 'email', 'active', 'no_telepon'])
             ->selectRaw('IF(active = 1, "Yes", "No") as active_str')
             ->selectRaw($this->query[$c_roles] . ' as ' . $this->query["{$c_roles}_alias"]);
         // filter

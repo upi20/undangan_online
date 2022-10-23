@@ -47,5 +47,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactListTableSeeder::class);
         $this->call(ContactMessagesTableSeeder::class);
         $this->call(FaqTableSeeder::class);
+        $this->call(SessionsTableSeeder::class);
     }
 }
