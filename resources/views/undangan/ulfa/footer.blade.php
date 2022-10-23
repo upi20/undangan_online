@@ -330,9 +330,98 @@
         $('#cd-seconds').html(seconds);
     }, 1000);
 
-    $('button.elementor-button').click(() => {
-        document.getElementById('song').play()
-    })
+    $(document).ready(() => {
+        $('button.elementor-button').click(() => {
+            // document.getElementById('song').play();
+        });
+
+        // whishes message
+        const MAX_MESSAGE = 500;
+        const whishes_message = $('#whishes-message');
+        whishes_message.click(check_whishes);
+        whishes_message.keyup(check_whishes);
+        whishes_message.change(check_whishes);
+
+        function check_whishes() {
+            const count = whishes_message.val().length;
+            const diff = MAX_MESSAGE - count;
+            $('#whishes-char-count').html(diff < 0 ? 0 : diff);
+        }
+
+        function refresh_pesan() {
+            $.ajax({
+                type: "GET",
+                url: `{{ route('pesan', $model->url) }}`,
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: (data) => {
+                    check_whishes();
+                    const container = $('#whishes-message-container');
+                    container.html('');
+                    data.forEach(e => {
+                        container.append(`
+                        <li class="comment even thread-even depth-1 wdp-item-comment" data-likes="0">
+                            <div class="wdp-comment wdp-clearfix">
+                                <div class="wdp-comment-avatar">
+                                    <img src="">
+                                </div>
+                                <div class="wdp-comment-content">
+                                    <div class="wdp-comment-info">
+                                        <a class="wdp-commenter-name"
+                                            title="${e.nama}">${e.nama}</a>
+                                        <span class="wdp-post-author"><i class="fas fa-check-circle"></i> ${e.keterangan}</span>
+                                        <br>
+                                        <span class="wdp-comment-time">
+                                            <i class="far fa-clock"></i> ${e.tanggal_str}
+                                        </span>
+                                    </div>
+                                    <div class="wdp-comment-text">
+                                        <p>${e.pesan} </p>
+                                    </div>
+                                    <div class="wdp-comment-actions">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        `);
+                    });
+                }
+            });
+        }
+
+        refresh_pesan();
+
+        // insertForm ===================================================================================
+        $('#main-form').submit(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                type: "POST",
+                url: `{{ route('pesan.simpan', $model->url) }}`,
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: (data) => {
+                    $('#main-form').trigger("reset");
+                    check_whishes();
+                    refresh_pesan();
+                },
+                error: function(data) {
+                    console.log(data);
+                },
+                complete: function() {
+                    console.log("finish");
+                }
+            });
+        });
+
+        setInterval(refresh_pesan, 10000);
+    });
 </script>
 </body>
 

@@ -24,6 +24,7 @@ use App\Http\Controllers\Frontend\GaleriController as GaleriControllerFrontend;
 use App\Http\Controllers\Frontend\ArtikelController;
 use App\Http\Controllers\TesController;
 use App\Http\Controllers\Undangan\DisplayController;
+use App\Models\Undangan\Undangan;
 
 Route::get('/session/buat', [TesController::class, 'buatSession']);
 Route::get('/session/tampil', [TesController::class, 'tampilkanSession']);
@@ -42,18 +43,9 @@ Route::controller(LoginController::class)->group(function () {
 
 // home default =======================================================================================================
 Route::get('/', function (Request $request) {
-    // menyimpan data session
-    // session(['key' => 'value']);
-    // $request->session()->put('nama', 'Diki Alfarabi Hadi');
-    // mengambil data session pada key
-    // $value = session('nama');
-
-    // dd(1 * (60 * 24 * 365));
-    // // mengambil data dengan default value
-    // $value = session('key', 'default');
-
     $nama_tamu = $request->to;
-    return view('undangan.ulfa', compact('nama_tamu'));
+    $model = Undangan::find(1);
+    return view('undangan.ulfa', compact('nama_tamu', 'model'));
 })->name('undangan');
 
 // artikel ============================================================================================================
@@ -134,7 +126,11 @@ Route::get('/ulfa', function (Request $request) {
 
 
 // profile username ===================================================================================================
-Route::get('/{model:url}', [DisplayController::class, 'display'])->name("display");
+Route::controller(DisplayController::class)->prefix('{model:url}')->group(function () {
+    Route::get('/', 'display')->name("display");
+    Route::get('/pesan', 'pesan')->name("pesan");
+    Route::post('/pesan', 'pesan_simpan')->name("pesan.simpan");
+});
 
 // Gform
 Route::get('/f/{model:slug}', [GFormController::class, 'frontend_detail'])->name("frontend.gform.detail");

@@ -14,7 +14,7 @@
     </style>
 
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>Wulan &amp; Zhaffar - Mengundang Mu</title>
     <link rel="canonical" href="index.html" />
     <meta property="og:locale" content="id_ID" />
@@ -362,8 +362,8 @@
         href='{{ asset('template/wp-content/plugins/elementor/assets/css/frontend.minf3df.css?ver=3.7.2') }}'
         type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-post-11-css'
-        href='{{ asset('template/wp-content/uploads/elementor/css/post-116c80.css?ver=1661751784') }}' type='text/css'
-        media='all' />
+        href='{{ asset('template/wp-content/uploads/elementor/css/post-116c80.css?ver=1661751784') }}'
+        type='text/css' media='all' />
     <link rel='stylesheet' id='powerpack-frontend-css'
         href='{{ asset('template/wp-content/plugins/powerpack-elements/assets/css/min/frontend.min4315.css?ver=2.9.8') }}'
         type='text/css' media='all' />

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('customer_id', false, true)->nullable()->default(null);
             $table->string('title')->default(null)->nullable();
+            $table->string('kontak')->default(null)->nullable();
             $table->date('start')->default(null)->nullable();
             $table->date('expired')->default(null)->nullable();
             $table->string('url')->unique();
