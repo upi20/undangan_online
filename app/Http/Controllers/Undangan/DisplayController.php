@@ -13,9 +13,19 @@ class DisplayController extends Controller
 {
     public function display(Undangan $model, Request $request)
     {
-        $mempelai = $model->mempelai->sortBy('sequence');
         $nama_tamu = $request->to;
-        $data = compact('nama_tamu', 'mempelai', 'model');
+        $mempelai = $model->mempelai->sortBy('sequence');
+        $acara = $model->acara->sortBy('tanggal');
+        $amplop = $model->amplop;
+        $galeri = $model->galeri->sortBy('sequence');
+        $sampul = $galeri->where('kode', 'SAMPUL_DEPAN')->first();
+        $sampul = $galeri->where('kode', 'SAMPUL_BELAKANG')->first();
+        $sampul = $galeri->where('kode', 'SAMPUL_ACARA')->first();
+        $sampul = $galeri->where('kode', 'MEMPELAI_PRIA')->first();
+        $sampul = $galeri->where('kode', 'MEMPELAI_WANITA')->first();
+        $sampul = $galeri->where('kode', 'GALERI')->first();
+
+        $data = compact('nama_tamu', 'mempelai', 'model', 'acara', 'amplop', 'galeri', 'sampul');
         $data['compact'] = $data;
         return view('undangan.ulfa', $data);
     }

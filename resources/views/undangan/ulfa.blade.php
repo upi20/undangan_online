@@ -1,4 +1,4 @@
-@include('undangan.ulfa.header')
+@include('undangan.ulfa.header', $compact)
 <div class="elementor-inner">
     <div class="elementor-section-wrap">
         <section
@@ -117,27 +117,19 @@
                                     data-id="6ac3e4bf" data-element_type="widget"
                                     data-widget_type="weddingpress-wellcome.default">
                                     <div class="elementor-widget-container">
-
                                         <div class="modalx"
-                                            data-sampul='{{ asset('template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.45.12-1.jpg') }}'>
-
+                                            data-sampul='{{ is_null($sampul) ? '' : $sampul->file_url }}'>
                                             <div class="overlayy"></div>
                                             <div class="content-modalx">
                                                 <div class="info_modalx">
-
                                                     <div class="elementor-image img">
                                                     </div>
 
-
-
-
-
                                                     <div class="wdp-mempelai" style="width: auto !important;">
-                                                        Wulan &amp; Zhaffar
+                                                        {{ $mempelai[0]->nama_panggilan }}
+                                                        &amp;
+                                                        {{ $mempelai[0]->nama_panggilan }}
                                                     </div>
-
-
-
 
                                                     <div class="wdp-dear" style="width: auto !important;">
                                                         Kpd Bpk/Ibu/Saudara/i
@@ -158,13 +150,13 @@
                                                                 <i aria-hidden="true"
                                                                     class="far fa-envelope-open"></i>
                                                             </span>
-                                                            Buka Undangan </button>
+                                                            Buka Undangan
+                                                        </button>
                                                     </div>
 
                                                     <div class="wdp-keterangan">
-                                                        Mohon maaf apabila ada
-                                                        kesalahan penulisan
-                                                        nama/gelar </div>
+                                                        Mohon maaf apabila ada kesalahan penulisan nama/gelar
+                                                    </div>
 
                                                     <script>
                                                         const sampul = jQuery('.modalx').data('sampul');
@@ -176,13 +168,6 @@
                                                             jQuery('body').css('overflow-x', 'hidden');
 
                                                         });
-                                                    </script>
-
-                                                    <script>
-                                                        // var z = document.querySelector('#wdp-button-wrapper');
-                                                        // z.addEventListener("click", function(event) {
-                                                        //     document.getElementById("song").play();
-                                                        // });
                                                     </script>
 
                                                     <style type="text/css">
@@ -204,8 +189,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
 
@@ -236,7 +219,9 @@
                                     data-id="23c08c50" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">
-                                            Wulan & Zhaffar</p>
+                                            {{ $mempelai[0]->nama_panggilan }}
+                                            &amp;
+                                            {{ $mempelai[0]->nama_panggilan }}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-182831f8 wdp-sticky-section-no elementor-widget elementor-widget-image"
@@ -253,7 +238,7 @@
                                     data-id="61a1096c" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">
-                                            11 Desember 2022</p>
+                                            {{ $model->tanggal }}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-767edcdc elementor-align-center elementor-tablet-align-center elementor-mobile-align-center wdp-sticky-section-no elementor-widget elementor-widget-button"
@@ -267,8 +252,8 @@
                                                     <span class="elementor-button-icon elementor-align-icon-left">
                                                         <i aria-hidden="true" class="far fa-calendar-check"></i>
                                                     </span>
-                                                    <span class="elementor-button-text">SAVE
-                                                        THE DATE</span>
+                                                    <span class="elementor-button-text">
+                                                        SAVE THE DATE</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -329,7 +314,9 @@
             class="elementor-section elementor-top-section elementor-element elementor-element-22f13031 elementor-section-boxed elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
             data-id="22f13031" data-element_type="section" id="acara"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;wave-brush&quot;,&quot;shape_divider_bottom&quot;:&quot;wave-brush&quot;}">
-            <div class="elementor-background-overlay"></div>
+            <div class="elementor-background-overlay"
+                style="background-image: url({{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.22.jpeg') }});">
+            </div>
             <div class="elementor-shape elementor-shape-top" data-negative="false">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
                     <path class="elementor-shape-fill"
@@ -376,6 +363,7 @@
             </div>
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-row">
+
                     <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cdf2ab0 wdp-sticky-section-no"
                         data-id="cdf2ab0" data-element_type="column">
                         <div class="elementor-column-wrap elementor-element-populated">
@@ -625,6 +613,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

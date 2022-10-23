@@ -15,19 +15,19 @@
 
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>Wulan &amp; Zhaffar - Mengundang Mu</title>
-    <link rel="canonical" href="index.html" />
+    <title> {{ $mempelai[0]->nama_panggilan }} &amp; {{ $mempelai[0]->nama_panggilan }} - Mengundang Mu</title>
+    <link rel="canonical" href="{{ route('undangan', $model->url) }}" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Wulan &amp; Zhaffar - Mengundang Mu" />
+    <meta property="og:title"
+        content="{{ $mempelai[0]->nama_panggilan }} &amp; {{ $mempelai[0]->nama_panggilan }} - Mengundang Mu" />
     <meta property="og:description"
-        content="Undangan Mempelai Galleri Kirim Doa &#038; Ucapan Wulan &amp; Zhaffar Kpd Bpk/Ibu/Saudara/i Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Berhadir Di Acara Pernikahan Kami. Buka Undangan Mohon maaf apabila ada kesalahan penulisan nama/gelar Wedding Invitation Wulan &#038; Zhaffar 09 Oktober 2022 SAVE THE DATE “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu &hellip;" />
-    <meta property="og:url" content="https://calonmantu.com/Wulan-Zhaffar/" />
+        content="Undangan Mempelai Galleri Kirim Doa &#038; Ucapan {{ $mempelai[0]->nama_panggilan }} &amp; {{ $mempelai[0]->nama_panggilan }} Kpd Bpk/Ibu/Saudara/i Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Berhadir Di Acara Pernikahan Kami. Buka Undangan Mohon maaf apabila ada kesalahan penulisan nama/gelar Wedding Invitation Wulan &#038; Zhaffar 09 Oktober 2022 SAVE THE DATE “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu &hellip;" />
+    <meta property="og:url" content="{{ route('undangan', $model->url) }}" />
     <meta property="og:site_name" content="Mengundang Mu" />
-    <meta property="article:published_time" content="2022-09-21T02:46:57+00:00" />
-    <meta property="article:modified_time" content="2022-09-21T06:07:33+00:00" />
-    <meta property="og:image"
-        content="/template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg" />
+    <meta property="article:published_time" />
+    <meta property="article:modified_time" />
+    <meta property="og:image" content="{{ is_null($sampul) ? '' : $sampul->file_url }}" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="683" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -37,17 +37,7 @@
     <meta name="twitter:data1" content="admin@mynikahan" />
     <meta name="twitter:label2" content="Estimasi waktu membaca" />
     <meta name="twitter:data2" content="4 menit" />
-    <script type="application/ld+json"
-          class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://calonmantu.com/Wulan-Zhaffar/","url":"https://calonmantu.com/Wulan-Zhaffar/","name":"Wulan & Zhaffar - Mengundang Mu","isPartOf":{"@id":"https://calonmantu.com/#website"},"primaryImageOfPage":{"@id":"https://calonmantu.com/Wulan-Zhaffar/#primaryimage"},"image":{"@id":"https://calonmantu.com/Wulan-Zhaffar/#primaryimage"},"thumbnailUrl":"/template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg","datePublished":"2022-09-21T02:46:57+00:00","dateModified":"2022-09-21T06:07:33+00:00","author":{"@id":"https://calonmantu.com/#/schema/person/3f780390b4b10e030e462add946585e1"},"breadcrumb":{"@id":"https://calonmantu.com/Wulan-Zhaffar/#breadcrumb"},"inLanguage":"id-ID","potentialAction":[{"@type":"ReadAction","target":["https://calonmantu.com/Wulan-Zhaffar/"]}]},{"@type":"ImageObject","inLanguage":"id-ID","@id":"https://calonmantu.com/Wulan-Zhaffar/#primaryimage","url":"/template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg","contentUrl":"/template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg","width":1024,"height":683},{"@type":"BreadcrumbList","@id":"https://calonmantu.com/Wulan-Zhaffar/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calonmantu.com/"},{"@type":"ListItem","position":2,"name":"Wulan &#038; Zhaffar"}]},{"@type":"WebSite","@id":"https://calonmantu.com/#website","url":"https://calonmantu.com/","name":"Mengundang Mu","description":"Invitation","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://calonmantu.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"id-ID"},{"@type":"Person","@id":"https://calonmantu.com/#/schema/person/3f780390b4b10e030e462add946585e1","name":"admin@mynikahan","image":{"@type":"ImageObject","inLanguage":"id-ID","@id":"https://calonmantu.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/d4da8f67235334707e26ce865460d536?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/d4da8f67235334707e26ce865460d536?s=96&d=mm&r=g","caption":"admin@mynikahan"},"sameAs":["http://calonmantu.com"],"url":"https://calonmantu.com/author/adminmynikahan/"}]}</script>
-    <!-- / Yoast SEO plugin. -->
 
-
-    <link rel="alternate" type="application/rss+xml" title="Mengundang Mu &raquo; Feed"
-        href="https://calonmantu.com/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Mengundang Mu &raquo; Umpan Komentar"
-        href="https://calonmantu.com/comments/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Mengundang Mu &raquo; Wulan &#038; Zhaffar Umpan Komentar"
-        href="feed/index.html" />
     <link rel='stylesheet' id='wp-block-library-css'
         href='{{ asset('template/wp-includes/css/dist/block-library/style.min5b21.css?ver=6.0.2') }}' type='text/css'
         media='all' />
@@ -316,40 +306,26 @@
         type='text/css' media='screen' />
     <style id='wdp_style-inline-css' type='text/css'>
         .wdp-wrapper {
-
             font-size: 14px
         }
 
-
-
         .wdp-wrapper ul.wdp-container-comments li.wdp-item-comment .wdp-comment-avatar img {
-
             max-width: 28px;
-
             max-height: 28px;
-
         }
 
         .wdp-wrapper ul.wdp-container-comments li.wdp-item-comment .wdp-comment-content {
-
             margin-left: 38px;
-
         }
 
         .wdp-wrapper ul.wdp-container-comments li.wdp-item-comment ul .wdp-comment-avatar img {
-
             max-width: 24px;
-
             max-height: 24px;
-
         }
 
         .wdp-wrapper ul.wdp-container-comments li.wdp-item-comment ul ul .wdp-comment-avatar img {
-
             max-width: 21px;
-
             max-height: 21px;
-
         }
     </style>
     <link rel='stylesheet' id='elementor-icons-css'
@@ -362,8 +338,8 @@
         href='{{ asset('template/wp-content/plugins/elementor/assets/css/frontend.minf3df.css?ver=3.7.2') }}'
         type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-post-11-css'
-        href='{{ asset('template/wp-content/uploads/elementor/css/post-116c80.css?ver=1661751784') }}'
-        type='text/css' media='all' />
+        href='{{ asset('template/wp-content/uploads/elementor/css/post-116c80.css?ver=1661751784') }}' type='text/css'
+        media='all' />
     <link rel='stylesheet' id='powerpack-frontend-css'
         href='{{ asset('template/wp-content/plugins/powerpack-elements/assets/css/min/frontend.min4315.css?ver=2.9.8') }}'
         type='text/css' media='all' />
@@ -400,13 +376,6 @@
     <link rel='stylesheet' id='elementor-icons-fa-brands-css'
         href='{{ asset('template/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3') }}'
         type='text/css' media='all' />
-    <script type='text/javascript' id='jquery-core-js-extra'>
-        /* <![CDATA[ */
-        var pp = {
-            "ajax_url": "https:\/\/calonmantu.com\/wp-admin\/admin-ajax.php"
-        };
-        /* ]]> */
-    </script>
     <script type='text/javascript' src='{{ asset('template/wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0') }}'
         id='jquery-core-js'></script>
     <script type='text/javascript' src='{{ asset('template/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2') }}'
@@ -464,17 +433,7 @@
             }
         }
     </style>
-    <link rel="icon"
-        href="{{ asset('template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-32x32.png') }}"
-        sizes="32x32" />
-    <link rel="icon"
-        href="{{ asset('template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-192x192.png') }}"
-        sizes="192x192" />
-    <link rel="apple-touch-icon"
-        href="{{ asset('template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-180x180.png') }}" />
-    <meta name="msapplication-TileImage"
-        content="/template/wp-content/uploads/2022/02/cropped-Desain-tanpa-judul-270x270.png" />
-    <!-- JQUERY JS -->
+
     <script src="{{ asset('assets/templates/admin/js/jquery.min.js') }}"></script>
 </head>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"

@@ -31,7 +31,6 @@ class UndanganPesan extends Model
 
     public function getTanggalStrAttribute()
     {
-        Carbon::setLocale('id');
         return Carbon::parse($this->attributes['tanggal'])
             ->diffForHumans();
     }

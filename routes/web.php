@@ -43,10 +43,8 @@ Route::controller(LoginController::class)->group(function () {
 
 // home default =======================================================================================================
 Route::get('/', function (Request $request) {
-    $nama_tamu = $request->to;
-    $model = Undangan::find(1);
-    return view('undangan.ulfa', compact('nama_tamu', 'model'));
-})->name('undangan');
+    return redirect()->route('undangan', 'wulan-zhaffar');
+});
 
 // artikel ============================================================================================================
 $prefix = 'artikel';
@@ -127,7 +125,7 @@ Route::get('/ulfa', function (Request $request) {
 
 // profile username ===================================================================================================
 Route::controller(DisplayController::class)->prefix('{model:url}')->group(function () {
-    Route::get('/', 'display')->name("display");
+    Route::get('/', 'display')->name("undangan");
     Route::get('/pesan', 'pesan')->name("pesan");
     Route::post('/pesan', 'pesan_simpan')->name("pesan.simpan");
 });

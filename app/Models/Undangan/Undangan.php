@@ -2,6 +2,7 @@
 
 namespace App\Models\Undangan;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -9,6 +10,7 @@ class Undangan extends Model
 {
     use HasFactory;
     protected $guarded = [];
+    protected $appends = ['tanggal'];
     protected $primaryKey = 'id';
     protected $table = 'undangans';
     const tableName = 'undangans';
@@ -42,5 +44,12 @@ class Undangan extends Model
     public function pesan()
     {
         return $this->hasMany(UndanganPesan::class, 'undangan_id', 'id');
+    }
+
+    public function getTanggalAttribute()
+    {
+        Carbon::setLocale('id');
+        return Carbon::parse($this->attributes['tanggal_hitung_mundur'])
+            ->isoFormat("D MMMM Y");
     }
 }

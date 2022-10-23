@@ -55,11 +55,11 @@
 </script>
 <script type='text/javascript' id='elementor-pro-frontend-js-before'>
     var ElementorProFrontendConfig = {
-        "ajaxurl": "https:\/\/calonmantu.com\/wp-admin\/admin-ajax.php",
+        "ajaxurl": "",
         "nonce": "052a39851b",
         "urls": {
-            "assets": "https:\/\/calonmantu.com\/wp-content\/plugins\/elementor-pro\/assets\/",
-            "rest": "https:\/\/calonmantu.com\/wp-json\/"
+            "assets": "",
+            "rest": ""
         },
         "shareButtonsNetworks": {
             "facebook": {
@@ -131,7 +131,7 @@
             "app_id": ""
         },
         "lottie": {
-            "defaultAnimationUrl": "https:\/\/calonmantu.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+            "defaultAnimationUrl": ""
         }
     };
 </script>
@@ -244,7 +244,7 @@
             "e_scroll_snap": true
         },
         "urls": {
-            "assets": "https:\/\/calonmantu.com\/wp-content\/plugins\/elementor\/assets\/"
+            "assets": ""
         },
         "settings": {
             "page": [],
@@ -264,7 +264,7 @@
             "id": 38950,
             "title": "Wulan%20%26%20Zhaffar%20-%20Mengundang%20Mu",
             "excerpt": "",
-            "featuredImage": "https:\/\/calonmantu.com\/wp-content\/uploads\/2022\/09\/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg"
+            "featuredImage": ""
         }
     };
 </script>
@@ -331,8 +331,9 @@
     }, 1000);
 
     $(document).ready(() => {
+        let is_loading = false;
         $('button.elementor-button').click(() => {
-            // document.getElementById('song').play();
+            document.getElementById('song').play();
         });
 
         // whishes message
@@ -395,6 +396,8 @@
         // insertForm ===================================================================================
         $('#main-form').submit(function(e) {
             e.preventDefault();
+            if (is_loading) return false;
+            is_loading = true;
             var formData = new FormData(this);
             $.ajax({
                 type: "POST",
@@ -416,6 +419,7 @@
                 },
                 complete: function() {
                     console.log("finish");
+                    is_loading = false;
                 }
             });
         });
