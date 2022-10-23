@@ -18,12 +18,12 @@ class DisplayController extends Controller
         $acara = $model->acara->sortBy('tanggal');
         $amplop = $model->amplop;
         $galeri = $model->galeri->sortBy('sequence');
-        $sampul = $galeri->where('kode', 'SAMPUL_DEPAN')->first();
-        $sampul = $galeri->where('kode', 'SAMPUL_BELAKANG')->first();
-        $sampul = $galeri->where('kode', 'SAMPUL_ACARA')->first();
-        $sampul = $galeri->where('kode', 'MEMPELAI_PRIA')->first();
-        $sampul = $galeri->where('kode', 'MEMPELAI_WANITA')->first();
-        $sampul = $galeri->where('kode', 'GALERI')->first();
+        $sampul = $galeri->where('kode', 'SAMPUL')->first();
+        // $sampul = $galeri->where('kode', 'SAMPUL_BELAKANG')->first();
+        // $sampul = $galeri->where('kode', 'SAMPUL_ACARA')->first();
+        // $sampul = $galeri->where('kode', 'MEMPELAI_PRIA')->first();
+        // $sampul = $galeri->where('kode', 'MEMPELAI_WANITA')->first();
+        // $sampul = $galeri->where('kode', 'GALERI')->first();
 
         $data = compact('nama_tamu', 'mempelai', 'model', 'acara', 'amplop', 'galeri', 'sampul');
         $data['compact'] = $data;
