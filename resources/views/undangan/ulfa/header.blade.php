@@ -27,14 +27,14 @@
     <meta property="og:site_name" content="Mengundang Mu" />
     <meta property="article:published_time" />
     <meta property="article:modified_time" />
-    <meta property="og:image" content="{{ is_null($sampul) ? '' : $sampul->file_url }}" />
+    <meta property="og:image" content="{{ $foto->sampul_depan }}" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="683" />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta name="author" content="admin@mynikahan" />
+    <meta name="author" content="admin@undangonline" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Ditulis oleh" />
-    <meta name="twitter:data1" content="admin@mynikahan" />
+    <meta name="twitter:data1" content="admin@undangonline" />
     <meta name="twitter:label2" content="Estimasi waktu membaca" />
     <meta name="twitter:data2" content="4 menit" />
 
@@ -431,6 +431,20 @@
                 float: none;
                 width: 100%;
             }
+        }
+
+        .elementor-38950 .elementor-element.elementor-element-22f13031>.elementor-background-overlay {
+            background-image: url({{ $foto->sampul_acara }});
+        }
+
+        @media (max-width: 767px) {
+            .elementor-38950 .elementor-element.elementor-element-22f13031>.elementor-background-overlay {
+                background-image: url({{ $foto->sampul_acara_hp }});
+            }
+        }
+
+        .elementor-38950 .elementor-element.elementor-element-4c12da71>.elementor-background-overlay {
+            background-image: url({{ $foto->sampul_pasangan }});
         }
     </style>
 

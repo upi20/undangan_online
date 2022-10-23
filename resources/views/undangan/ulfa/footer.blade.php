@@ -293,10 +293,9 @@
 <script type='text/javascript'
     src='{{ asset('template/wp-content/themes/landingpress-wp/assets/js/script.mindeae.js?ver=3.2.1') }}'
     id='landingpress-js'></script>
-
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("2022-12-11T10:00:00.000+07:00").getTime();
+    var countDownDate = new Date('{{ $model->hitung_mundur_js }}').getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {

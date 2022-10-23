@@ -18,6 +18,7 @@ return new class extends Migration
             $table->bigInteger('undangan_id', false, true)->nullable()->default(null);
 
             $table->string('title')->default(null)->nullable();
+            $table->string('foto')->default(null)->nullable();
             $table->string('nama_lengkap')->default(null)->nullable();
             $table->string('nama_panggilan')->default(null)->nullable();
             $table->string('nama_orang_tua')->default(null)->nullable();

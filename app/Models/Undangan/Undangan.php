@@ -10,7 +10,7 @@ class Undangan extends Model
 {
     use HasFactory;
     protected $guarded = [];
-    protected $appends = ['tanggal'];
+    protected $appends = ['tanggal_str', 'hitung_mundur_js'];
     protected $primaryKey = 'id';
     protected $table = 'undangans';
     const tableName = 'undangans';
@@ -46,10 +46,17 @@ class Undangan extends Model
         return $this->hasMany(UndanganPesan::class, 'undangan_id', 'id');
     }
 
-    public function getTanggalAttribute()
+    public function getTanggalStrAttribute()
     {
         Carbon::setLocale('id');
         return Carbon::parse($this->attributes['tanggal_hitung_mundur'])
             ->isoFormat("D MMMM Y");
+    }
+
+    public function getHitungMundurJsAttribute()
+    {
+        Carbon::setLocale('id');
+        return Carbon::parse($this->attributes['tanggal_hitung_mundur'])
+            ->format("Y-m-d\TH:i:s.000+07:00");
     }
 }

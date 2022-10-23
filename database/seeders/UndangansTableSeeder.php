@@ -24,7 +24,7 @@ class UndangansTableSeeder extends Seeder
                 'id' => 1,
                 'customer_id' => 1,
                 'title' => 'Wulan & Zhaffar',
-                'kontak' => NULL,
+                'kontak' => '6285720258480',
                 'start' => NULL,
                 'expired' => NULL,
                 'url' => 'wulan-zhaffar',

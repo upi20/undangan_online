@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Undangan;
 use App\Http\Controllers\Controller;
 use App\Models\Undangan\Undangan;
 use App\Models\Undangan\UndanganPesan;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use League\Config\Exception\ValidationException;
@@ -18,19 +19,27 @@ class DisplayController extends Controller
         $acara = $model->acara->sortBy('tanggal');
         $amplop = $model->amplop;
         $galeri = $model->galeri->sortBy('sequence');
-        $sampul = $galeri->where('kode', 'SAMPUL')->first();
-        // $sampul = $galeri->where('kode', 'SAMPUL_DEPAN')->first();
-        // $sampul = $galeri->where('kode', 'SAMPUL_BELAKANG')->first();
-        // $sampul = $galeri->where('kode', 'SAMPUL_ACARA')->first();
-        // $sampul = $galeri->where('kode', 'MEMPELAI_PRIA')->first();
-        // $sampul = $galeri->where('kode', 'MEMPELAI_WANITA')->first();
-        // $sampul = $galeri->where('kode', 'GALERI')->first();
 
-        $data = compact('nama_tamu', 'mempelai', 'model', 'acara', 'amplop', 'galeri', 'sampul');
+        $get_galeri = function (?Collection $collect, string $kode = null) {
+            if (is_null($collect)) {
+                return null;
+            }
+            $get = $collect->where('kode', $kode)->first();
+            return is_null($get) ? null : $get->file_url;
+        };
+
+        $foto['sampul_depan'] = $get_galeri($galeri, 'SAMPUL_DEPAN');
+        $foto['sampul_belakang'] = $get_galeri($galeri, 'SAMPUL_BELAKANG');
+        $foto['sampul_acara'] = $get_galeri($galeri, 'SAMPUL_ACARA');
+        $foto['sampul_acara_hp'] = $get_galeri($galeri, 'SAMPUL_ACARA_HP');
+        $foto['sampul_pasangan'] = $get_galeri($galeri, 'SAMPUL_PASANGAN');
+        $foto['galeri'] = $galeri->where('kode', 'GALERI');
+        $foto = (object)$foto;
+
+        $data = compact('nama_tamu', 'mempelai', 'model', 'acara', 'amplop', 'foto');
         $data['compact'] = $data;
         return view('undangan.ulfa', $data);
     }
-
     public function pesan(Undangan $model)
     {
         $pesan = [];

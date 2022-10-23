@@ -24,7 +24,7 @@ class UndanganAcarasTableSeeder extends Seeder
                 'id' => 1,
                 'undangan_id' => 1,
                 'nama' => 'Akad nikah',
-                'tanggal' => '2022-12-11 10:10:00',
+                'tanggal' => '2022-12-11 10:00:00',
                 'alamat' => 'Taman kopi kolmas<br>
 Jambudipa, Kec. Cisarua,<br>
 Bandung Barat, Jawa Barat 40551',

@@ -1,7 +1,7 @@
 {
-    "name": "KARMAPACK",
-    "short_name": "karmapack",
-    "description": "Karmapack - Keluarga Mahasiswa dan Pelajar Cianjur Kidul",
+    "name": "UndangONline",
+    "short_name": "UndangONline",
+    "description": "Undangan online - Situs undangan online harga terjangkau",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

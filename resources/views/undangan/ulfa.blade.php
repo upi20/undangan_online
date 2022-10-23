@@ -117,8 +117,7 @@
                                     data-id="6ac3e4bf" data-element_type="widget"
                                     data-widget_type="weddingpress-wellcome.default">
                                     <div class="elementor-widget-container">
-                                        <div class="modalx"
-                                            data-sampul='{{ is_null($sampul) ? '' : $sampul->file_url }}'>
+                                        <div class="modalx" data-sampul='{{ $foto->sampul_depan }}'>
                                             <div class="overlayy"></div>
                                             <div class="content-modalx">
                                                 <div class="info_modalx">
@@ -238,7 +237,7 @@
                                     data-id="61a1096c" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">
-                                            {{ $model->tanggal }}</p>
+                                            {{ $model->tanggal_str }}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-767edcdc elementor-align-center elementor-tablet-align-center elementor-mobile-align-center wdp-sticky-section-no elementor-widget elementor-widget-button"
@@ -259,7 +258,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -314,8 +312,7 @@
             class="elementor-section elementor-top-section elementor-element elementor-element-22f13031 elementor-section-boxed elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
             data-id="22f13031" data-element_type="section" id="acara"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;wave-brush&quot;,&quot;shape_divider_bottom&quot;:&quot;wave-brush&quot;}">
-            <div class="elementor-background-overlay"
-                style="background-image: url({{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.22.jpeg') }});">
+            <div class="elementor-background-overlay">
             </div>
             <div class="elementor-shape elementor-shape-top" data-negative="false">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
@@ -403,7 +400,7 @@
                                                                             </span>
                                                                         </p>
                                                                         <p class="elementor-icon-box-description">
-                                                                            Minggu, 11 Desember 2022
+                                                                            {{ $acara[0]->tanggal_str }}
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -435,7 +432,7 @@
                                                                             </span>
                                                                         </p>
                                                                         <p class="elementor-icon-box-description">
-                                                                            10.00
+                                                                            {{ $acara[0]->waktu_str }}
                                                                             WIB </p>
                                                                     </div>
                                                                 </div>
@@ -450,16 +447,16 @@
                                 <div class="elementor-element elementor-element-36fb489d wdp-sticky-section-no elementor-widget elementor-widget-heading"
                                     data-id="36fb489d" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <p class="elementor-heading-title elementor-size-default">Taman kopi kolmas<br>
-                                            Jambudipa, Kec. Cisarua,<br>
-                                            Bandung Barat, Jawa Barat 40551</p>
+                                        <p class="elementor-heading-title elementor-size-default">
+                                            {!! $acara[0]->alamat !!}
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-be9faad elementor-align-justify wdp-sticky-section-no elementor-widget elementor-widget-button"
                                     data-id="be9faad" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a href="https://goo.gl/maps/NMkUDt1zHGBh5ZoN9"
+                                            <a href="{!! $acara[0]->link_google_maps !!}"
                                                 class="elementor-button-link elementor-button elementor-size-sm"
                                                 role="button">
                                                 <span class="elementor-button-content-wrapper">
@@ -472,6 +469,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-efa93b2 wdp-sticky-section-no"
                         data-id="efa93b2" data-element_type="column">
                         <div class="elementor-column-wrap elementor-element-populated">
@@ -512,7 +510,7 @@
                                                                             </span>
                                                                         </p>
                                                                         <p class="elementor-icon-box-description">
-                                                                            Minggu, 11 Desember 2022
+                                                                            {{ $acara[1]->tanggal_str }}
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -544,7 +542,7 @@
                                                                             </span>
                                                                         </p>
                                                                         <p class="elementor-icon-box-description">
-                                                                            12.30
+                                                                            {{ $acara[1]->waktu_str }}
                                                                             WIB </p>
                                                                     </div>
                                                                 </div>
@@ -560,9 +558,7 @@
                                     data-id="7672c72" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">
-                                            Taman kopi kolmas<br>
-                                            Jambudipa, Kec. Cisarua,<br>
-                                            Bandung Barat, Jawa Barat 40551</p>
+                                            {!! $acara[1]->alamat !!}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-328f833 wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-countdown"
@@ -670,12 +666,13 @@
                                                                 <div class="elementor-image-box-wrapper">
                                                                     <figure class="elementor-image-box-img">
                                                                         <img width="683" height="1024"
-                                                                            src="{{ asset('template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.42.23-1.jpg') }}"
+                                                                            src="{{ $mempelai[0]->foto_url }}"
                                                                             class="attachment-full size-full"
                                                                             alt="" loading="lazy" />
                                                                     </figure>
                                                                     <div class="elementor-image-box-content">
-                                                                        <p class="elementor-image-box-title">Wulan Sari
+                                                                        <p class="elementor-image-box-title">
+                                                                            {{ $mempelai[0]->nama_lengkap }}
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -687,16 +684,14 @@
                                                             <div class="elementor-widget-container">
                                                                 <p
                                                                     class="elementor-heading-title elementor-size-default">
-                                                                    Putri ketiga
-                                                                    dari Bpk. Dadang
-                                                                    Mahmudin & Ibu
-                                                                    Titin Rosmiati
+                                                                    {{ $mempelai[0]->nama_orang_tua }}
                                                                 </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7ead9ae wdp-sticky-section-no"
                                                 data-id="7ead9ae" data-element_type="column">
                                                 <div class="elementor-column-wrap elementor-element-populated">
@@ -708,13 +703,14 @@
                                                                 <div class="elementor-image-box-wrapper">
                                                                     <figure class="elementor-image-box-img">
                                                                         <img width="683" height="1024"
-                                                                            src="{{ asset('template/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-19-at-11.42.23.jpg') }}"
+                                                                            src="{{ $mempelai[1]->foto_url }}"
                                                                             class="attachment-full size-full"
                                                                             alt="" loading="lazy" />
                                                                     </figure>
                                                                     <div class="elementor-image-box-content">
                                                                         <p class="elementor-image-box-title">
-                                                                            Muzhaffar Nur Hidayat</p>
+                                                                            {{ $mempelai[1]->nama_lengkap }}
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -725,11 +721,7 @@
                                                             <div class="elementor-widget-container">
                                                                 <p
                                                                     class="elementor-heading-title elementor-size-default">
-                                                                    Putra
-                                                                    Pertama dari
-                                                                    Bpk. H. Mohammad
-                                                                    Hatta Amirulloh
-                                                                    & Ibu Junaedah
+                                                                    {{ $mempelai[1]->nama_orang_tua }}
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -788,87 +780,29 @@
                                     data-widget_type="gallery.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-gallery__container">
-                                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.45.12-1.jpeg') }}"
-                                                data-elementor-open-lightbox="yes"
-                                                data-elementor-lightbox-slideshow="all-22993334"
-                                                data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.45.12 (1)"
-                                                e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5NzgsInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDUuMTItMS5qcGVnIiwic2xpZGVzaG93IjoiYWxsLTIyOTkzMzM0In0%3D">
-                                                <div class="e-gallery-image elementor-gallery-item__image"
-                                                    data-thumbnail="/template/WhatsApp-Image-2022-09-19-at-11.45.12-1.jpeg"
-                                                    data-width="683" data-height="1024" alt=""></div>
-                                                <div class="elementor-gallery-item__overlay">
-                                                </div>
-                                            </a>
-                                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.45.12.jpeg') }}"
-                                                data-elementor-open-lightbox="yes"
-                                                data-elementor-lightbox-slideshow="all-22993334"
-                                                data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.45.12"
-                                                e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5NzksInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDUuMTIuanBlZyIsInNsaWRlc2hvdyI6ImFsbC0yMjk5MzMzNCJ9">
-                                                <div class="e-gallery-image elementor-gallery-item__image"
-                                                    data-thumbnail="/template/WhatsApp-Image-2022-09-19-at-11.45.12.jpeg"
-                                                    data-width="683" data-height="1024" alt=""></div>
-                                                <div class="elementor-gallery-item__overlay">
-                                                </div>
-                                            </a>
-                                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg') }}"
-                                                data-elementor-open-lightbox="yes"
-                                                data-elementor-lightbox-slideshow="all-22993334"
-                                                data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.43.25"
-                                                e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5ODAsInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDMuMjUuanBlZyIsInNsaWRlc2hvdyI6ImFsbC0yMjk5MzMzNCJ9">
-                                                <div class="e-gallery-image elementor-gallery-item__image"
-                                                    data-thumbnail="/template/WhatsApp-Image-2022-09-19-at-11.43.25.jpeg"
-                                                    data-width="1024" data-height="683" alt=""></div>
-                                                <div class="elementor-gallery-item__overlay">
-                                                </div>
-                                            </a>
-                                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.43.24.jpeg') }}"
-                                                data-elementor-open-lightbox="yes"
-                                                data-elementor-lightbox-slideshow="all-22993334"
-                                                data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.43.24"
-                                                e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5ODEsInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDMuMjQuanBlZyIsInNsaWRlc2hvdyI6ImFsbC0yMjk5MzMzNCJ9">
-                                                <div class="e-gallery-image elementor-gallery-item__image"
-                                                    data-thumbnail="/template/WhatsApp-Image-2022-09-19-at-11.43.24.jpeg"
-                                                    data-width="683" data-height="1024" alt="">
-                                                </div>
-                                                <div class="elementor-gallery-item__overlay">
-                                                </div>
-                                            </a>
-                                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.23-2.jpeg') }}"
-                                                data-elementor-open-lightbox="yes"
-                                                data-elementor-lightbox-slideshow="all-22993334"
-                                                data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.42.23 (2)"
-                                                e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5ODIsInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDIuMjMtMi5qcGVnIiwic2xpZGVzaG93IjoiYWxsLTIyOTkzMzM0In0%3D">
-                                                <div class="e-gallery-image elementor-gallery-item__image"
-                                                    data-thumbnail="/template/WhatsApp-Image-2022-09-19-at-11.42.23-2.jpeg"
-                                                    data-width="576" data-height="1024" alt="">
-                                                </div>
-                                                <div class="elementor-gallery-item__overlay">
-                                                </div>
-                                            </a>
-                                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                href="{{ asset('template/WhatsApp-Image-2022-09-19-at-11.42.22.jpeg') }}"
-                                                data-elementor-open-lightbox="yes"
-                                                data-elementor-lightbox-slideshow="all-22993334"
-                                                data-elementor-lightbox-title="WhatsApp Image 2022-09-19 at 11.42.22"
-                                                e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5ODUsInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDIuMjIuanBlZyIsInNsaWRlc2hvdyI6ImFsbC0yMjk5MzMzNCJ9">
-                                                <div class="e-gallery-image elementor-gallery-item__image"
-                                                    data-thumbnail="/template/WhatsApp-Image-2022-09-19-at-11.42.22.jpeg"
-                                                    data-width="1024" data-height="683" alt="">
-                                                </div>
-                                                <div class="elementor-gallery-item__overlay">
-                                                </div>
-                                            </a>
+                                            @foreach ($foto->galeri as $galeri)
+                                                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+                                                    href="{{ $galeri->file_url }}" data-elementor-open-lightbox="yes"
+                                                    data-elementor-lightbox-slideshow="all-22993334"
+                                                    data-elementor-lightbox-title="{{ $galeri->judul }}"
+                                                    e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzg5NzgsInVybCI6Imh0dHBzOlwvXC9jYWxvbm1hbnR1LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDlcL1doYXRzQXBwLUltYWdlLTIwMjItMDktMTktYXQtMTEuNDUuMTItMS5qcGVnIiwic2xpZGVzaG93IjoiYWxsLTIyOTkzMzM0In0%3D">
+                                                    <div class="e-gallery-image elementor-gallery-item__image"
+                                                        data-thumbnail="{{ $galeri->file_url }}"
+                                                        data-width="{{ $galeri->file_attr->width }}"
+                                                        data-height="{{ $galeri->file_attr->height }}"
+                                                        alt="{{ $galeri->judul }}"></div>
+                                                    <div class="elementor-gallery-item__overlay">
+                                                    </div>
+                                                </a>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
 
         <section
@@ -914,7 +848,7 @@
                                         <div class="elementor-wdp-form-wrapper elementor-wdp-form-button-align-left">
                                             <form method="get" class="wdp-form wdp-wa-form"
                                                 id="wdp-wa-form-6c5b8e10"
-                                                data-waapi="https://api.whatsapp.com/send?phone=6285720258480&amp;text=Hai%2C%20saya%20%25nama%25%20ingin%20konfirmasi%20kehadiran%20pada%20undangan%20pernikahan%20digital%20bahwa%20%25option%25%20bersama%20%25jumlah%25%20orang.%20Saya%20ucapkan%3A%20%20_%2A%25pesan%25%2A_.%20Terima%20kasih%20ya.">
+                                                data-waapi="https://api.whatsapp.com/send?phone={{ $model->kontak }}&amp;text=Hai%2C%20saya%20%25nama%25%20ingin%20konfirmasi%20kehadiran%20pada%20undangan%20pernikahan%20digital%20bahwa%20%25option%25%20bersama%20%25jumlah%25%20orang.%20Saya%20ucapkan%3A%20%20_%2A%25pesan%25%2A_.%20Terima%20kasih%20ya.">
                                                 <div class="wdp-form-fields-wrapper">
                                                     <div class="wdp-form-field-nama">
                                                         <label for="wdp-form-nama-6c5b8e10" class="">
@@ -1203,21 +1137,17 @@
                     <audio id="song" loop="">
                         <source src="/template/Sesaat-Kau-Hadir-Utha-Likumahuwa.mp3" type="audio/mp3">
                     </audio>
-
                     <div class="elementor-icon-wrapper" id="unmute-sound" style="display: none;">
                         <div class="elementor-icon">
                             <i aria-hidden="true" class="fa fa-play-circle"></i>
                         </div>
                     </div>
-
                     <div class="elementor-icon-wrapper" id="mute-sound" style="">
                         <div class="elementor-icon">
                             <i aria-hidden="true" class="fa fa-pause-circle-o"></i>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
