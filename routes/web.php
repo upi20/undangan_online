@@ -23,6 +23,7 @@ use App\Http\Controllers\Frontend\MemberController;
 use App\Http\Controllers\Frontend\GaleriController as GaleriControllerFrontend;
 use App\Http\Controllers\Frontend\ArtikelController;
 use App\Http\Controllers\TesController;
+use App\Http\Controllers\Undangan\DisplayController;
 
 Route::get('/session/buat', [TesController::class, 'buatSession']);
 Route::get('/session/tampil', [TesController::class, 'tampilkanSession']);
@@ -133,7 +134,7 @@ Route::get('/ulfa', function (Request $request) {
 
 
 // profile username ===================================================================================================
-Route::get('/{model:username}', [MemberController::class, 'member'])->name("anggota.username");
+Route::get('/{model:url}', [DisplayController::class, 'display'])->name("display");
 
 // Gform
 Route::get('/f/{model:slug}', [GFormController::class, 'frontend_detail'])->name("frontend.gform.detail");

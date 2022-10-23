@@ -48,5 +48,14 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactMessagesTableSeeder::class);
         $this->call(FaqTableSeeder::class);
         $this->call(SessionsTableSeeder::class);
+        $this->call(CustomersTableSeeder::class);
+        $this->call(UndangansTableSeeder::class);
+        $this->call(UndanganMempelaisTableSeeder::class);
+        $this->call(UndanganAcarasTableSeeder::class);
+        $this->call(UndanganGalerisTableSeeder::class);
+        $this->call(UndanganPesansTableSeeder::class);
+        $this->call(UndanganAmplopLayanansTableSeeder::class);
+        $this->call(UndanganAmplopsTableSeeder::class);
+        $this->call(UndanganDikunjungisTableSeeder::class);
     }
 }

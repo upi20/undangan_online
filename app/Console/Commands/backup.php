@@ -92,6 +92,17 @@ class backup extends Command
                 'faq',
                 'sessions',
             ],
+            'undangan' => [
+                'customers',
+                'undangans',
+                'undangan_mempelais',
+                'undangan_acaras',
+                'undangan_galeris',
+                'undangan_pesans',
+                'undangan_amplop_layanans',
+                'undangan_amplops',
+                'undangan_dikunjungis',
+            ],
         ];
         if ($opt_users == 1 || $arg_type == 'users') echo shell_exec('php artisan iseed users --force');
         foreach ($tables as $k => $t) {

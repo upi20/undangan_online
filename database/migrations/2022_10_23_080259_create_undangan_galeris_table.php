@@ -18,6 +18,7 @@ return new class extends Migration
             $table->bigInteger('undangan_id', false, true)->nullable()->default(null);
 
             $table->string('judul')->default(null)->nullable();
+            $table->string('kode')->default(null)->nullable();
             $table->string('file')->default(null)->nullable();
             $table->integer('sequence')->default(null)->nullable();
 

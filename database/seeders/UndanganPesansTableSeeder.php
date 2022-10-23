@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class PRoleHasPermissionsTableSeeder extends Seeder
+class UndanganPesansTableSeeder extends Seeder
 {
 
     /**
@@ -16,7 +16,7 @@ class PRoleHasPermissionsTableSeeder extends Seeder
     {
         
 
-        \DB::table('p_role_has_permissions')->delete();
+        \DB::table('undangan_pesans')->delete();
         
         
         

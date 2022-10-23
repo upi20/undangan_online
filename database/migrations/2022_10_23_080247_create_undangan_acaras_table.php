@@ -21,7 +21,6 @@ return new class extends Migration
             $table->dateTime('tanggal')->default(null)->nullable();
             $table->text('alamat')->default(null)->nullable();
             $table->string('link_google_maps')->default(null)->nullable();
-            $table->integer('sequence')->default(null)->nullable();
 
             $table->bigInteger('updated_by', false, true)->nullable()->default(null);
             $table->bigInteger('created_by', false, true)->nullable()->default(null);
